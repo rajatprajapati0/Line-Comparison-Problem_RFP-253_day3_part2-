@@ -22,14 +22,14 @@ namespace Line_Comparison
             {
                 if (i==1)
                 {
-                    Console.WriteLine("enter valuse for first line \n");
+                    Console.WriteLine("enter valuse for  line one \n");
                      one = line();
                     Console.WriteLine("\nlength of line one -"+one+"\n");                      
                 }
             
                 else
                 {
-                    Console.WriteLine("enter valuse for second line");
+                    Console.WriteLine("enter valuse for  line two \n");
                      two= line();
                     Console.WriteLine("\nlength of line two -" + two+"\n");
 
@@ -37,10 +37,15 @@ namespace Line_Comparison
             }
             if (one==two) 
             {
-                Console.WriteLine("lines are equal it is preferable.");
+                Console.WriteLine("lines are equal");
             }
-            else
-            { Console.WriteLine("lines are not equal it is not preferable.");
+            else if(one>two)
+            { 
+                Console.WriteLine("line one is greater than line two");
+            }
+            else 
+            {
+                Console.WriteLine("line two is greater than line one");
             }
         }
        static double line()
